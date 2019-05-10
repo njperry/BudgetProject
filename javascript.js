@@ -14,7 +14,10 @@
       google.charts.setOnLoadCallback(updateAll);
 
 
-      function buttonPressed() {
+      function buttonPressed(e) {
+        event.preventDefault();
+        
+
         if(document.getElementById("amount").value.length === 0){
           document.getElementById("amount").value = "0"
         }
@@ -32,8 +35,12 @@
             budget["Bills"] = budget["Bills"] + parseInt(document.getElementById("amount").value, 10);
             break;
 
+
+         
+
         }
         updateAll();
+        document.getElementById("myForm").reset(); 
       }
 
       function updateAll() {
@@ -66,13 +73,18 @@
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         google.visualization.events.addListener(chart, 'error', function (googleError) {
-
           console.log(googleError);
           // google.visualization.errors.removeError(googleError.id);
-          let errorMessage = document.querySelector("#piechart span");
+          let errorMessage = document.querySelector("#piechart div span", "#piechart div");
           errorMessage.innerText = "Oh no, you're over budget Mate!!!!!";
           console.dir(errorMessage);
-          errorMessage.style.fontSize = "50px";
+          errorMessage.style.fontSize = "30px";
+          errorMessage.style.display = "flex";
+          errorMessage.style.backgroundColor = "";
+          errorMessage.style.color = "red";
+          errorMessage.style.padding = "24%";
+          
+          
           // document.getElementById(googleError.id).innerHTML = "Message removed";
           // document.body.append("<p> Oh No</p>")
       });
