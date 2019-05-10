@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald%7CSource+Sans+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald%7CSource+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="MoneyMate.jpg">
+    </header>
+    <section>
+
+
+
+
+        <div class="inputs">
+            <div class="card-content">
+                <h2 id="availBal"></h2>
+            </div>
+            <div class="input-field col s12">
+                <select id="selector">
+                    <option value="1">Entertainment</option>
+                    <option value="2">Food</option>
+                    <option value="3">Clothing</option>
+                    <option value="4">Bills</option>
+                </select>
+                <label>Category</label>
+            </div>
+
+
+            <div class="input-field col s6">
+                <input placeholder="$" id="amount" type="number" class="validate">
+                <label for="amount">Amount ($)</label>
+            </div>
+
+            <button class="spend-btn" onclick="buttonPressed()">Submit</button>
+
+
+
+
+
+
+
+        </div>
+
+        <div class="container">
+
+            <div id="piechart"></div>
+
+        </div>
+    </section>
+
+
+    <div class="container_row">
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Spent ($)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Entertainment</td>
+                    <td id="entertainmentSpent">$0</td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td id="foodSpent">$0</td>
+                </tr>
+                <tr>
+                    <td>Clothing</td>
+                    <td id="clothingSpent">$0</td>
+                </tr>
+                <tr>
+                    <td>Bills</td>
+                    <td id="billsSpent">$0</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
+</body>
+
+</html>
