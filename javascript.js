@@ -29,7 +29,7 @@
             budget["Clothing"] = budget["Clothing"] + parseInt(document.getElementById("amount").value, 10);
             break;
           case "4":
-            budget["Bills"] = budget["Bills"] + parseInt(document.getElementById("amount").value, 10);
+            budget["Bills"] = budget["Bills"] +  parseInt(document.getElementById("amount").value, 10);
             break;
 
         }
@@ -57,20 +57,34 @@
 
         var data = google.visualization.arrayToDataTable(dataArrayGen);
 
+        
         var options = {
-          title: 'Budget'
+         
+          pieSliceText:  `value`,
+          width :600,
+          height:400,
+          
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-      //   google.visualization.events.addListener(chart, 'error', function (googleError) {
-      //     google.visualization.errors.removeError(googleError.id);
-      //     document.getElementById("error_msg").innerHTML = "Message removed";
-      // });
-    
+        google.visualization.events.addListener(chart, 'error', function (googleError) {
 
-
-        chart.draw(data);
+          console.log(googleError);
+          // google.visualization.errors.removeError(googleError.id);
+          let errorMessage = document.querySelector("#piechart span");
+          errorMessage.innerText = "Oh no, you're over budget Mate!!!!!";
+          console.dir(errorMessage);
+          errorMessage.style.fontSize = "50px";
+          // document.getElementById(googleError.id).innerHTML = "Message removed";
+          // document.body.append("<p> Oh No</p>")
+      });
+ 
+ 
+ 
+ 
+ 
+        chart.draw(data, options);
       }
-
-      M.AutoInit();
+ 
+      // M.AutoInit();

@@ -1,9 +1,116 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Oswald', sans-serif;
+     overflow-y: hidden; 
 }
+
+.logo{
+    transform: translateY(30px);
+}
+
 
 section {
     display: flex;
@@ -11,6 +118,15 @@ section {
     align-items: center;
     width: 100%;
     justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    widows: 100%;
+    font-size: 50px;
+    color: purple;
+
 }
 
 .inputs {
@@ -39,6 +155,43 @@ label {
 }
 
 #piechart {
-    width: 100%; 
-    height: 500px;
+     
+    height: 150px;
+    transform: translateY(-80px);
+   
 }
+
+.container_row > table {
+    transform: translateY(200px);
+    
+}
+
+#piechart > div {
+    height: 225px;
+    
+}
+body > div > table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 252px;
+    transform: translateY(400px);
+}
+
+body > div > table > thead > tr{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+body > div > table > tbody > tr {
+    display: flex;
+    flex-direction: row;
+    widows: 500px;
+    justify-content: space-evenly;
+}
+
+
+}
+
