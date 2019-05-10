@@ -1,197 +1,190 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 768px){
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Oswald', sans-serif;
-     overflow-y: hidden; 
-}
-
-.logo{
-    transform: translateY(30px);
-}
-
-
-section {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    overflow-x: hidden;
+ }
+ 
+ .logo {
     width: 100%;
-    justify-content: center;
-}
-
-h2 {
+    height: 10%;
     display: flex;
     justify-content: center;
-    widows: 100%;
-    font-size: 50px;
+ }
+ 
+ h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 35px;
     color: purple;
-
-}
-
-.inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.inputs > div {
-    padding: 0 0 25px 0;
-}
-
-label {
-    padding-left: 25px;
-}
-
-#selector, #amount, .spend-btn {
-    min-width: 300px;
-    height: 35px;
-}
-
-#piechart {
-     
-    height: 150px;
-    transform: translateY(-80px);
-   
-}
-
-.container_row > table {
-    transform: translateY(200px);
-    
-}
-
-#piechart > div {
-    height: 225px;
-    
-}
-body > div > table {
-    width: 100%;
+    margin-left: 35px;
+ }
+ 
+ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 252px;
-    transform: translateY(400px);
-}
-
-body > div > table > thead > tr{
-    width: 500px;
+    width: 100%;
+ }
+ 
+ .inputs {
     display: flex;
-    justify-content: space-evenly;
-    
-}
-body > div > table > tbody > tr {
-    display: flex;
-    flex-direction: row;
-    widows: 500px;
-    justify-content: space-evenly;
-}
-
-
-}
-
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ 
+ /* .container {
+   height: 20%;
+ } */
+ 
+ table{
+    display: none;
+ }
+ 
+ .inputs > div {
+    padding: 0 0 25px 0;
+ }
+ 
+ label {
+    padding-left: 25px;
+ }
+ 
+ #selector, #amount, .spend-btn {
+    width: 300px;
+    height: 35px;
+ }
+ 
+ #piechart {
+    margin-left: 128px;
+ }
+ @media only screen and (min-width: 768px){
+ 
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Oswald', sans-serif;
+         overflow-y: hidden;
+ 
+    }
+ 
+    .logo{
+        transform: translateY(30px);
+    }
+ 
+ 
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin-top: 75px;
+    }
+ 
+    h2 {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 40px;
+        color: purple;
+ 
+    }
+ 
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        width: 50%;
+    }
+ 
+    .container {
+        display: flex;
+        flex-direction: column;
+        width:80%
+        /* align-items: flex-start; */
+ 
+    }
+ 
+    .inputs > div {
+        padding: 0 0 25px 0;
+    }
+ 
+    label {
+        padding-left: 25px;
+    }
+ 
+    #selector, #amount, .spend-btn {
+        min-width: 300px;
+        height: 35px;
+    }
+ 
+    #piechart {
+ 
+        height: 150px;
+        transform: translateY(-80px);
+ 
+    }
+ 
+    .container_row > table {
+        transform: translateY(-115px);
+        transform: translateX(-45px);
+ 
+    }
+ 
+    #piechart > div {
+        height: 225px;
+ 
+    }
+ 
+    table {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 150px;
+        width: 30%;
+        background-color: lightgray;
+        border: 1px solid black;
+        font-size: 20px;
+ 
+    }
+    body > div > table {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 252px;
+        transform: translateY(400px);
+    }
+ 
+ 
+    body > div > table > tbody > tr {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        justify-content: space-evenly;
+    }
+ 
+    body > div > table > tbody > tr:nth-child(1) {
+        background-color: blue;
+        color: white;
+    }
+ 
+    body > div > table > tbody > tr:nth-child(2) {
+        background-color: red;
+        color: white;
+    }
+ 
+    body > div > table > tbody > tr:nth-child(3) {
+        background-color: orange;
+        color: white;
+    }
+ 
+    body > div > table > tbody > tr:nth-child(4){
+        background-color: green;
+        color: white;
+    }
+ 
+ }
