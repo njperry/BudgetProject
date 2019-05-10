@@ -58,19 +58,30 @@
         var data = google.visualization.arrayToDataTable(dataArrayGen);
 
         var options = {
-          title: 'Budget'
+        'width':900,
+        'height':900,
+        'is3D':true
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-      //   google.visualization.events.addListener(chart, 'error', function (googleError) {
-      //     google.visualization.errors.removeError(googleError.id);
-      //     document.getElementById("error_msg").innerHTML = "Message removed";
-      // });
+        google.visualization.events.addListener(chart, 'error', function (googleError) {
+
+          console.log(googleError);
+          // google.visualization.errors.removeError(googleError.id);
+          let errorMessage = document.querySelector("#piechart span");
+          errorMessage.innerText = "Oh no, you're over budget Mate!!!!!";
+          console.dir(errorMessage);
+          errorMessage.style.fontSize = "50px";
+          // document.getElementById(googleError.id).innerHTML = "Message removed";
+          // document.body.append("<p> Oh No</p>")
+      });
+
+      
     
 
 
-        chart.draw(data);
+        chart.draw(data, options);
       }
 
-      M.AutoInit();
+      // M.AutoInit();
