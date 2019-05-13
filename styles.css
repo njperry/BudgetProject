@@ -51,9 +51,16 @@ body {
     padding-left: 25px;
  }
  
- #selector, #amount, .spend-btn {
+ #selector, #amount {
     width: 300px;
     height: 35px;
+ }
+
+ .spend-btn  {
+    width: 306px;
+    height: 35px;
+     background-color: lightgray;
+     margin-top: 20px;
  }
  
  #piechart {
@@ -121,6 +128,7 @@ body {
         height: 35px;
     }
  
+
     #piechart {
  
         height: 150px;
@@ -144,10 +152,10 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         margin-top: 150px;
-        width: 30%;
+        width: 40%;
         background-color: lightgray;
-        border: 1px solid black;
-        font-size: 20px;
+       font-size: 20px;
+       
  
     }
     body > div > table {
@@ -155,36 +163,53 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 252px;
+        height: 152px;
         transform: translateY(400px);
     }
  
- 
+    body > div > table > thead{
+        width: 500px;
+    }
+    
     body > div > table > tbody > tr {
         display: flex;
         flex-direction: row;
         width: 500px;
         justify-content: space-evenly;
     }
+
+    body > div > table > thead > tr {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
  
     body > div > table > tbody > tr:nth-child(1) {
-        background-color: blue;
-        color: white;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        color: blue;
     }
  
     body > div > table > tbody > tr:nth-child(2) {
-        background-color: red;
-        color: white;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        color: red;
     }
  
     body > div > table > tbody > tr:nth-child(3) {
-        background-color: orange;
-        color: white;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        color: orange;
     }
  
     body > div > table > tbody > tr:nth-child(4){
-        background-color: green;
-        color: white;
+        display: flex;
+        justify-content: space-between;
+        background-color: lightgray;
+        color: green;
     }
  
  }

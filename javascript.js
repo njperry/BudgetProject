@@ -82,16 +82,8 @@
           errorMessage.style.color = "red";
           errorMessage.style.padding = "24%";
  
- 
-          // document.getElementById(googleError.id).innerHTML = "Message removed";
-          // document.body.append("<p> Oh No</p>")
       });
- 
- 
- 
- 
- 
         chart.draw(data, options);
       }
  
-      // M.AutoInit();
+
