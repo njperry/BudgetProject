@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StevenLy369/BudgetProject.git"
+    "url": "git+https://github.com/njperry/BudgetProject.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/StevenLy369/BudgetProject/issues"
+    "url": "https://github.com/njperry/BudgetProject/issues"
   },
-  "homepage": "https://github.com/Stevenly369/BudgetProject#readme",
+  "homepage": "https://github.com/njperry/BudgetProject#readme",
   "description": ""
 }
